@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct MainPage: View {
-    @Binding var isOpened: Bool
+    @State var showMenuModal: Bool = false
+    
     var body: some View {
         ScrollView{
             HStack{
@@ -16,7 +17,7 @@ struct MainPage: View {
                     .font(.system(size: 34, weight: .bold))
                 Spacer()
                 Button{
-                    isOpened.toggle()
+                    showMenuModal = true
                 } label: {
                     Label("hamburgerMenu", systemImage: "menucard"
                           )
@@ -35,11 +36,14 @@ struct MainPage: View {
             .font(.system(size: 20, weight: .light))
             Spacer()
         }
+        .sheet(isPresented:$showMenuModal){
+            SelectMenuModal(isPresented: $showMenuModal)
+        }
     }
 }
 
 struct MainPage_Previews: PreviewProvider {
     static var previews: some View {
-        MainPage(isOpened: .constant(true))
+        MainPage()
     }
 }

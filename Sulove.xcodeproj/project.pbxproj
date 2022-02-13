@@ -15,6 +15,7 @@
 		23E15BCE27B7FC590007A37D /* SuloveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E15BCD27B7FC590007A37D /* SuloveUITests.swift */; };
 		23E15BD027B7FC590007A37D /* SuloveUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E15BCF27B7FC590007A37D /* SuloveUITestsLaunchTests.swift */; };
 		23E15BDD27B7FC760007A37D /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E15BDC27B7FC760007A37D /* MainPage.swift */; };
+		23E15BE527B954BE0007A37D /* SelectMenuModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E15BE427B954BE0007A37D /* SelectMenuModal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		23E15BCD27B7FC590007A37D /* SuloveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuloveUITests.swift; sourceTree = "<group>"; };
 		23E15BCF27B7FC590007A37D /* SuloveUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuloveUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		23E15BDC27B7FC760007A37D /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
+		23E15BE427B954BE0007A37D /* SelectMenuModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMenuModal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,12 +98,12 @@
 		23E15BB127B7FC580007A37D /* Sulove */ = {
 			isa = PBXGroup;
 			children = (
+				23E15BE227B954750007A37D /* Views */,
 				23E15BDF27B7FD160007A37D /* Helpers */,
 				23E15BB227B7FC580007A37D /* SuloveApp.swift */,
 				23E15BB427B7FC580007A37D /* ContentView.swift */,
 				23E15BB627B7FC590007A37D /* Assets.xcassets */,
 				23E15BB827B7FC590007A37D /* Preview Content */,
-				23E15BDC27B7FC760007A37D /* MainPage.swift */,
 			);
 			path = Sulove;
 			sourceTree = "<group>";
@@ -136,6 +138,23 @@
 			children = (
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		23E15BE227B954750007A37D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				23E15BE327B9547C0007A37D /* MainPage */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		23E15BE327B9547C0007A37D /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				23E15BDC27B7FC760007A37D /* MainPage.swift */,
+				23E15BE427B954BE0007A37D /* SelectMenuModal.swift */,
+			);
+			path = MainPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +289,7 @@
 			files = (
 				23E15BB527B7FC580007A37D /* ContentView.swift in Sources */,
 				23E15BB327B7FC580007A37D /* SuloveApp.swift in Sources */,
+				23E15BE527B954BE0007A37D /* SelectMenuModal.swift in Sources */,
 				23E15BDD27B7FC760007A37D /* MainPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
