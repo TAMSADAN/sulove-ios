@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23E15C7527BAA09E0007A37D /* SuloveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E15C7427BAA09E0007A37D /* SuloveApp.swift */; };
+		23E15C7727BAA09E0007A37D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E15C7627BAA09E0007A37D /* ContentView.swift */; };
+		23E15C7927BAA09F0007A37D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23E15C7827BAA09F0007A37D /* Assets.xcassets */; };
+		23E15C7C27BAA09F0007A37D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23E15C7B27BAA09F0007A37D /* Preview Assets.xcassets */; };
+		23E15C8627BAA09F0007A37D /* SuloveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E15C8527BAA09F0007A37D /* SuloveTests.swift */; };
+		23E15C9027BAA09F0007A37D /* SuloveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E15C8F27BAA09F0007A37D /* SuloveUITests.swift */; };
+		23E15C9227BAA09F0007A37D /* SuloveUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E15C9127BAA09F0007A37D /* SuloveUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23E15C8227BAA09F0007A37D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23E15C6927BAA09E0007A37D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23E15C7027BAA09E0007A37D;
+			remoteInfo = Sulove;
+		};
+		23E15C8C27BAA09F0007A37D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23E15C6927BAA09E0007A37D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23E15C7027BAA09E0007A37D;
+			remoteInfo = Sulove;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		23E15C7127BAA09E0007A37D /* Sulove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sulove.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23E15C7427BAA09E0007A37D /* SuloveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuloveApp.swift; sourceTree = "<group>"; };
+		23E15C7627BAA09E0007A37D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		23E15C7827BAA09F0007A37D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23E15C7B27BAA09F0007A37D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		23E15C8127BAA09F0007A37D /* SuloveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuloveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23E15C8527BAA09F0007A37D /* SuloveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuloveTests.swift; sourceTree = "<group>"; };
+		23E15C8B27BAA09F0007A37D /* SuloveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuloveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23E15C8F27BAA09F0007A37D /* SuloveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuloveUITests.swift; sourceTree = "<group>"; };
+		23E15C9127BAA09F0007A37D /* SuloveUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuloveUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23E15C6E27BAA09E0007A37D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23E15C7E27BAA09F0007A37D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23E15C8827BAA09F0007A37D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23E15C6827BAA09E0007A37D = {
+			isa = PBXGroup;
+			children = (
+				23E15C7327BAA09E0007A37D /* Sulove */,
+				23E15C8427BAA09F0007A37D /* SuloveTests */,
+				23E15C8E27BAA09F0007A37D /* SuloveUITests */,
+				23E15C7227BAA09E0007A37D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		23E15C7227BAA09E0007A37D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23E15C7127BAA09E0007A37D /* Sulove.app */,
+				23E15C8127BAA09F0007A37D /* SuloveTests.xctest */,
+				23E15C8B27BAA09F0007A37D /* SuloveUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23E15C7327BAA09E0007A37D /* Sulove */ = {
+			isa = PBXGroup;
+			children = (
+				23E15C7427BAA09E0007A37D /* SuloveApp.swift */,
+				23E15C7627BAA09E0007A37D /* ContentView.swift */,
+				23E15C7827BAA09F0007A37D /* Assets.xcassets */,
+				23E15C7A27BAA09F0007A37D /* Preview Content */,
+			);
+			path = Sulove;
+			sourceTree = "<group>";
+		};
+		23E15C7A27BAA09F0007A37D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				23E15C7B27BAA09F0007A37D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		23E15C8427BAA09F0007A37D /* SuloveTests */ = {
+			isa = PBXGroup;
+			children = (
+				23E15C8527BAA09F0007A37D /* SuloveTests.swift */,
+			);
+			path = SuloveTests;
+			sourceTree = "<group>";
+		};
+		23E15C8E27BAA09F0007A37D /* SuloveUITests */ = {
+			isa = PBXGroup;
+			children = (
+				23E15C8F27BAA09F0007A37D /* SuloveUITests.swift */,
+				23E15C9127BAA09F0007A37D /* SuloveUITestsLaunchTests.swift */,
+			);
+			path = SuloveUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23E15C7027BAA09E0007A37D /* Sulove */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23E15C9527BAA09F0007A37D /* Build configuration list for PBXNativeTarget "Sulove" */;
+			buildPhases = (
+				23E15C6D27BAA09E0007A37D /* Sources */,
+				23E15C6E27BAA09E0007A37D /* Frameworks */,
+				23E15C6F27BAA09E0007A37D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sulove;
+			productName = Sulove;
+			productReference = 23E15C7127BAA09E0007A37D /* Sulove.app */;
+			productType = "com.apple.product-type.application";
+		};
+		23E15C8027BAA09F0007A37D /* SuloveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23E15C9827BAA09F0007A37D /* Build configuration list for PBXNativeTarget "SuloveTests" */;
+			buildPhases = (
+				23E15C7D27BAA09F0007A37D /* Sources */,
+				23E15C7E27BAA09F0007A37D /* Frameworks */,
+				23E15C7F27BAA09F0007A37D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23E15C8327BAA09F0007A37D /* PBXTargetDependency */,
+			);
+			name = SuloveTests;
+			productName = SuloveTests;
+			productReference = 23E15C8127BAA09F0007A37D /* SuloveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		23E15C8A27BAA09F0007A37D /* SuloveUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23E15C9B27BAA09F0007A37D /* Build configuration list for PBXNativeTarget "SuloveUITests" */;
+			buildPhases = (
+				23E15C8727BAA09F0007A37D /* Sources */,
+				23E15C8827BAA09F0007A37D /* Frameworks */,
+				23E15C8927BAA09F0007A37D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23E15C8D27BAA09F0007A37D /* PBXTargetDependency */,
+			);
+			name = SuloveUITests;
+			productName = SuloveUITests;
+			productReference = 23E15C8B27BAA09F0007A37D /* SuloveUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23E15C6927BAA09E0007A37D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					23E15C7027BAA09E0007A37D = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					23E15C8027BAA09F0007A37D = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 23E15C7027BAA09E0007A37D;
+					};
+					23E15C8A27BAA09F0007A37D = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 23E15C7027BAA09E0007A37D;
+					};
+				};
+			};
+			buildConfigurationList = 23E15C6C27BAA09E0007A37D /* Build configuration list for PBXProject "Sulove" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 23E15C6827BAA09E0007A37D;
+			productRefGroup = 23E15C7227BAA09E0007A37D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23E15C7027BAA09E0007A37D /* Sulove */,
+				23E15C8027BAA09F0007A37D /* SuloveTests */,
+				23E15C8A27BAA09F0007A37D /* SuloveUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23E15C6F27BAA09E0007A37D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23E15C7C27BAA09F0007A37D /* Preview Assets.xcassets in Resources */,
+				23E15C7927BAA09F0007A37D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23E15C7F27BAA09F0007A37D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23E15C8927BAA09F0007A37D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23E15C6D27BAA09E0007A37D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23E15C7727BAA09E0007A37D /* ContentView.swift in Sources */,
+				23E15C7527BAA09E0007A37D /* SuloveApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23E15C7D27BAA09F0007A37D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23E15C8627BAA09F0007A37D /* SuloveTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23E15C8727BAA09F0007A37D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23E15C9227BAA09F0007A37D /* SuloveUITestsLaunchTests.swift in Sources */,
+				23E15C9027BAA09F0007A37D /* SuloveUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23E15C8327BAA09F0007A37D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23E15C7027BAA09E0007A37D /* Sulove */;
+			targetProxy = 23E15C8227BAA09F0007A37D /* PBXContainerItemProxy */;
+		};
+		23E15C8D27BAA09F0007A37D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23E15C7027BAA09E0007A37D /* Sulove */;
+			targetProxy = 23E15C8C27BAA09F0007A37D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		23E15C9327BAA09F0007A37D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		23E15C9427BAA09F0007A37D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23E15C9627BAA09F0007A37D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Sulove/Preview Content\"";
+				DEVELOPMENT_TEAM = 272QNH7NKN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.tamsadan.Sulove;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		23E15C9727BAA09F0007A37D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Sulove/Preview Content\"";
+				DEVELOPMENT_TEAM = 272QNH7NKN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.tamsadan.Sulove;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		23E15C9927BAA09F0007A37D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 272QNH7NKN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.tamsadan.SuloveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sulove.app/Sulove";
+			};
+			name = Debug;
+		};
+		23E15C9A27BAA09F0007A37D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 272QNH7NKN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.tamsadan.SuloveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sulove.app/Sulove";
+			};
+			name = Release;
+		};
+		23E15C9C27BAA09F0007A37D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 272QNH7NKN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.tamsadan.SuloveUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Sulove;
+			};
+			name = Debug;
+		};
+		23E15C9D27BAA09F0007A37D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 272QNH7NKN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.tamsadan.SuloveUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Sulove;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23E15C6C27BAA09E0007A37D /* Build configuration list for PBXProject "Sulove" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23E15C9327BAA09F0007A37D /* Debug */,
+				23E15C9427BAA09F0007A37D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23E15C9527BAA09F0007A37D /* Build configuration list for PBXNativeTarget "Sulove" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23E15C9627BAA09F0007A37D /* Debug */,
+				23E15C9727BAA09F0007A37D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23E15C9827BAA09F0007A37D /* Build configuration list for PBXNativeTarget "SuloveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23E15C9927BAA09F0007A37D /* Debug */,
+				23E15C9A27BAA09F0007A37D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23E15C9B27BAA09F0007A37D /* Build configuration list for PBXNativeTarget "SuloveUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23E15C9C27BAA09F0007A37D /* Debug */,
+				23E15C9D27BAA09F0007A37D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 23E15C6927BAA09E0007A37D /* Project object */;
+}
