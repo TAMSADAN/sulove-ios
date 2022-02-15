@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230562D227BBE4FE006BA57C /* GmarketSansBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 230562D127BBE4FE006BA57C /* GmarketSansBold.otf */; };
+		230562D427BBE6C2006BA57C /* GmarketSansLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 230562D327BBE6C2006BA57C /* GmarketSansLight.otf */; };
+		230562D627BBE6CA006BA57C /* GmarketSansMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 230562D527BBE6CA006BA57C /* GmarketSansMedium.otf */; };
 		23E15C7527BAA09E0007A37D /* SuloveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E15C7427BAA09E0007A37D /* SuloveApp.swift */; };
 		23E15C7727BAA09E0007A37D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E15C7627BAA09E0007A37D /* ContentView.swift */; };
 		23E15C7927BAA09F0007A37D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23E15C7827BAA09F0007A37D /* Assets.xcassets */; };
@@ -14,6 +17,8 @@
 		23E15C8627BAA09F0007A37D /* SuloveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E15C8527BAA09F0007A37D /* SuloveTests.swift */; };
 		23E15C9027BAA09F0007A37D /* SuloveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E15C8F27BAA09F0007A37D /* SuloveUITests.swift */; };
 		23E15C9227BAA09F0007A37D /* SuloveUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E15C9127BAA09F0007A37D /* SuloveUITestsLaunchTests.swift */; };
+		23E15CA227BAA2670007A37D /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E15CA127BAA2670007A37D /* MainPage.swift */; };
+		23E15CA427BAA28E0007A37D /* SelectMenuModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E15CA327BAA28E0007A37D /* SelectMenuModal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		230562D127BBE4FE006BA57C /* GmarketSansBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GmarketSansBold.otf; path = ../../../../../../Downloads/GmarketSansOTF/GmarketSansBold.otf; sourceTree = "<group>"; };
+		230562D327BBE6C2006BA57C /* GmarketSansLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GmarketSansLight.otf; path = ../../../../../../Downloads/GmarketSansOTF/GmarketSansLight.otf; sourceTree = "<group>"; };
+		230562D527BBE6CA006BA57C /* GmarketSansMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GmarketSansMedium.otf; path = ../../../../../../Downloads/GmarketSansOTF/GmarketSansMedium.otf; sourceTree = "<group>"; };
 		23E15C7127BAA09E0007A37D /* Sulove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sulove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23E15C7427BAA09E0007A37D /* SuloveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuloveApp.swift; sourceTree = "<group>"; };
 		23E15C7627BAA09E0007A37D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +52,9 @@
 		23E15C8B27BAA09F0007A37D /* SuloveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuloveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23E15C8F27BAA09F0007A37D /* SuloveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuloveUITests.swift; sourceTree = "<group>"; };
 		23E15C9127BAA09F0007A37D /* SuloveUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuloveUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		23E15C9E27BAA1320007A37D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		23E15CA127BAA2670007A37D /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
+		23E15CA327BAA28E0007A37D /* SelectMenuModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMenuModal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +82,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		230562CF27BBE4DA006BA57C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				230562D027BBE4E8006BA57C /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		230562D027BBE4E8006BA57C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				230562D127BBE4FE006BA57C /* GmarketSansBold.otf */,
+				230562D327BBE6C2006BA57C /* GmarketSansLight.otf */,
+				230562D527BBE6CA006BA57C /* GmarketSansMedium.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		23E15C6827BAA09E0007A37D = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +123,9 @@
 		23E15C7327BAA09E0007A37D /* Sulove */ = {
 			isa = PBXGroup;
 			children = (
+				230562CF27BBE4DA006BA57C /* Resources */,
+				23E15C9F27BAA2220007A37D /* Views */,
+				23E15C9E27BAA1320007A37D /* Info.plist */,
 				23E15C7427BAA09E0007A37D /* SuloveApp.swift */,
 				23E15C7627BAA09E0007A37D /* ContentView.swift */,
 				23E15C7827BAA09F0007A37D /* Assets.xcassets */,
@@ -125,6 +157,23 @@
 				23E15C9127BAA09F0007A37D /* SuloveUITestsLaunchTests.swift */,
 			);
 			path = SuloveUITests;
+			sourceTree = "<group>";
+		};
+		23E15C9F27BAA2220007A37D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				23E15CA027BAA2340007A37D /* MainPage */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		23E15CA027BAA2340007A37D /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				23E15CA127BAA2670007A37D /* MainPage.swift */,
+				23E15CA327BAA28E0007A37D /* SelectMenuModal.swift */,
+			);
+			path = MainPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +281,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				23E15C7C27BAA09F0007A37D /* Preview Assets.xcassets in Resources */,
+				230562D227BBE4FE006BA57C /* GmarketSansBold.otf in Resources */,
 				23E15C7927BAA09F0007A37D /* Assets.xcassets in Resources */,
+				230562D427BBE6C2006BA57C /* GmarketSansLight.otf in Resources */,
+				230562D627BBE6CA006BA57C /* GmarketSansMedium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +311,8 @@
 			files = (
 				23E15C7727BAA09E0007A37D /* ContentView.swift in Sources */,
 				23E15C7527BAA09E0007A37D /* SuloveApp.swift in Sources */,
+				23E15CA427BAA28E0007A37D /* SelectMenuModal.swift in Sources */,
+				23E15CA227BAA2670007A37D /* MainPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,11 +476,13 @@
 				DEVELOPMENT_TEAM = 272QNH7NKN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sulove/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,11 +507,13 @@
 				DEVELOPMENT_TEAM = 272QNH7NKN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sulove/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
