@@ -7,8 +7,22 @@
 
 import SwiftUI
 
+struct ItemButtonStyle: ButtonStyle {
+    @State var buttonColor : Color
+    func makeBody(configuration: Self.Configuration) -> some View {
+        configuration.label
+            .foregroundColor(Color.white)
+            .padding(15)
+            .background(buttonColor)
+            .cornerRadius(10)
+            .shadow(radius: 2)
+    }
+}
+
 struct SelectMenuModal: View {
     @Binding var isPresented : Bool
+    
+    @EnvironmentObject var item : SuloveItem
     
     var body: some View {
         ScrollView{
@@ -29,7 +43,8 @@ struct SelectMenuModal: View {
             VStack{
                 VStack{
                     Button{
-                        isPresented = false //임시 값
+                        item.isExisted.toggle()
+                        isPresented = false
                     } label : {
                         HStack{
                             Image(systemName: "wand.and.stars")
@@ -38,11 +53,8 @@ struct SelectMenuModal: View {
                                 .font(.system(size: 25, weight: .bold))
                         }
                     }
-                    .foregroundColor(Color.white)
-                    .padding(15)
-                    .background(Color(hue: 1.0, saturation: 0.626, brightness: 0.929))
-                    .cornerRadius(10)
-                    .shadow(radius: 2)
+                    .buttonStyle(ItemButtonStyle(buttonColor: Color(hue: 1.0, saturation: 0.626, brightness: 0.929)))
+                    
                     Text("함께 공유하는 버킷리스트를 작성해보세요.")
                         .font(Font.custom("GmarketSansLight", size: 16))
                 }
@@ -60,11 +72,7 @@ struct SelectMenuModal: View {
                                 .font(.system(size: 25, weight: .bold))
                         }
                     }
-                    .foregroundColor(Color.white)
-                    .padding(15)
-                    .background(Color(hue: 0.105, saturation: 0.694, brightness: 0.955))
-                    .cornerRadius(10)
-                    .shadow(radius: 2)
+                    .buttonStyle(ItemButtonStyle(buttonColor: Color(hue: 0.105, saturation: 0.694, brightness: 0.955)))
                     Text("메모를 공유하고 함께 편집해보세요.")
                         .font(Font.custom("GmarketSansLight", size: 16))
                 }
@@ -81,11 +89,7 @@ struct SelectMenuModal: View {
                                 .font(.system(size: 25, weight: .bold))
                         }
                     }
-                    .foregroundColor(Color.white)
-                    .padding(15)
-                    .background(Color(hue: 0.587, saturation: 0.694, brightness: 0.955))
-                    .cornerRadius(10)
-                    .shadow(radius: 2)
+                    .buttonStyle(ItemButtonStyle(buttonColor: Color(hue: 0.587, saturation: 0.694, brightness: 0.955)))
                     Text("우리의 디데이를 기록해주세요.")
                         .font(Font.custom("GmarketSansLight", size: 16))
                 }
@@ -101,5 +105,6 @@ struct SelectMenuModal: View {
 struct SelectMenuModal_Previews: PreviewProvider {
     static var previews: some View {
         SelectMenuModal(isPresented: .constant(false))
+            .environmentObject(SuloveItem(itemName: "버킷리스트", isExisted: false))
     }
 }
