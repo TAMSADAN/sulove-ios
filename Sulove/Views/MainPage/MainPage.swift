@@ -9,41 +9,68 @@ import SwiftUI
 
 struct MainPage: View {
     @State var showMenuModal: Bool = false
+    @EnvironmentObject var item : SuloveItem
+    
+    var suloveItem : [SuloveItem] = [
+        SuloveItem(itemName: "버킷리스트", isExisted: true),
+        SuloveItem(itemName: "메모장", isExisted: false),
+        SuloveItem(itemName: "디데이", isExisted: false),
+    ]
+    
+    var showItemCount : [SuloveItem] {
+        suloveItem.filter{
+            item in item.isExisted
+        }
+    }
     
     var body: some View {
-        ScrollView{
-            HStack{
-                Text("서랍")
-                    .font(Font.custom("GmarketSansMedium", size: 34))
-                Spacer()
-                Button{
-                    showMenuModal = true
-                } label: {
-                    Label("hamburgerMenu", systemImage: "menucard"
-                          )
-                        .font(.system(size: 26))
-                        .labelStyle(.iconOnly)
-                        .foregroundColor(.black)
-                    
+        let showItem : Bool = showItemCount.count > 0 ? true : false
+        
+        GeometryReader { geometry in
+            ScrollView{
+                HStack{
+                    Text("우리의 서랍")
+                        .font(Font.custom("GmarketSansMedium", size: 34))
+                    Spacer()
+                    Button{
+                        showMenuModal = true
+                    } label: {
+                        Label("hamburgerMenu", systemImage: "menucard"
+                              )
+                            .font(.system(size: 26))
+                            .labelStyle(.iconOnly)
+                            .foregroundColor(.black)
+                        
+                    }
+                }
+                .padding()
+                
+                
+                if item.isExisted {
+                    BucketListItem()
+                }else {
+                    VStack{
+                        Text("메뉴버튼을 눌러")
+                        Text("기능을 추가해주세요.")
+                        
+                    }
+                    .font(Font.custom("GmarketSansLight", size: 22))
+                    .frame(
+                        width : geometry.size.width,
+                        height: geometry.size.height-80
+                    )
                 }
             }
-            .padding()
-            
-            VStack{
-                Text("메뉴버튼을 눌러")
-                Text("기능을 추가해주세요.")
+            .sheet(isPresented:$showMenuModal){
+                SelectMenuModal(isPresented: $showMenuModal)
             }
-            .font(Font.custom("GmarketSansLight", size: 22))
-            Spacer()
-        }
-        .sheet(isPresented:$showMenuModal){
-            SelectMenuModal(isPresented: $showMenuModal)
         }
     }
 }
 
 struct MainPage_Previews: PreviewProvider {
     static var previews: some View {
-        MainPage()
+        MainPage().environmentObject(
+            SuloveItem(itemName: "버킷리스트", isExisted: false))
     }
 }
