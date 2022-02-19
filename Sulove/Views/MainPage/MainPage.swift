@@ -29,8 +29,8 @@ struct MainPage: View {
         GeometryReader { geometry in
             ScrollView{
                 HStack{
-                    Text("우리의 서랍")
-                        .font(Font.custom("GmarketSansMedium", size: 34))
+                    Text("서랍")
+                        .font(Font.custom("GmarketSansMedium", size: 30))
                     Spacer()
                     Button{
                         showMenuModal = true
@@ -47,7 +47,7 @@ struct MainPage: View {
                 
                 
                 if item.isExisted {
-                    BucketListItem()
+                    BucketListRow()
                 }else {
                     VStack{
                         Text("메뉴버튼을 눌러")

@@ -6,24 +6,17 @@
 //
 
 import SwiftUI
-
+/*
 struct BucketListItem: View {
+    
     var body: some View {
-        VStack(alignment: .leading){
-            Text("버킷리스트")
-            Image(systemName: "star.fill")
-        }
-        .frame(
-            maxWidth: .infinity,
-            alignment: .topLeading
-        )
-        .border(Color.green)
-        .padding()
+        Text("이소진")
     }
 }
 
 struct BucketListItem_Previews: PreviewProvider {
     static var previews: some View {
-        BucketListItem()
+        BucketListItem(item: bucket)
     }
 }
+*/
