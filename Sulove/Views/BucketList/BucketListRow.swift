@@ -7,20 +7,46 @@
 
 import SwiftUI
 
-struct bucketStruct : Identifiable{
-    var id: Int
-    var name : String
-    var date : String
-}
-
 struct BucketListRow: View {
-    var bucketItems : [bucketStruct] = [
-        bucketStruct(id:1, name: "이소진", date: "5/13"),
-        bucketStruct(id:2, name: "송영모", date: "9/23"),
+    
+    var bucketItems : [bucketListClass]=[
+        bucketListClass(name: "이소진", date: "5/13"),
+        bucketListClass(name: "송영모", date: "9/23")
     ]
     
     var body: some View {
-        VStack(alignment: .leading){
+            VStack(alignment: .leading){
+                HStack{
+                    Image(systemName: "wand.and.stars")
+                        .font(.system(size: 18))
+                    Text("버킷리스트")
+                        .font(Font.custom("GmarketSansMedium", size: 18))
+                }
+                .foregroundColor(Color.white)
+                .padding(10)
+                .background(Color(hue: 1.0, saturation: 0.626, brightness: 0.929))
+                .cornerRadius(5)
+                .shadow(radius: 2)
+                
+                ScrollView(.horizontal){
+                    HStack{
+                        ForEach(bucketItems.indices){ idx in
+                            NavigationLink(destination: BucketListDetail()) {
+                            BucketListItem(name : bucketItems[idx].name, date : bucketItems[idx].date)
+                            }
+                        }
+                    }
+                }
+                .frame(height: 190)
+            }
+            .padding(.leading, 10)
+            .frame(
+                maxWidth: .infinity,
+                alignment: .topLeading
+            )
+        
+        
+        /*VStack(alignment: .leading){
             HStack{
                 Image(systemName: "wand.and.stars")
                     .font(.system(size: 18))
@@ -33,34 +59,21 @@ struct BucketListRow: View {
             .cornerRadius(5)
             .shadow(radius: 2)
             
-            ScrollView(.horizontal, showsIndicators: false){
-                HStack(alignment: .top){
-                    ForEach(bucketItems){
-                        item in
-                        VStack(alignment: .leading){
-                            Text(item.date)
-                                .font(Font.custom("GmarketSansMedium", size: 40))
-                                .padding(.bottom, 5)
-                            Text(item.name)
-                                .font(Font.custom("GmarketSansLight", size: 24))
-                        }
-                        .frame(width: 170, height: 160)
-                        .padding(.leading, 5)
-                        .background(Color.white)
-                        .cornerRadius(10)
-                        .shadow(radius: 5)
+            ScrollView(.horizontal){
+                HStack{
+                    ForEach(bucketItems.indices){ idx in
+                        BucketListItem(name : bucketItems[idx].name, date : bucketItems[idx].date)
                     }
                 }
-                .frame(width: 385, height: 180)
+                .border(Color.red)
             }
-            .frame(height: 185)
-            
+            .frame(height: 190)
         }
+        .padding(.leading, 10)
         .frame(
             maxWidth: .infinity,
             alignment: .topLeading
-        )
-        .padding()
+        )*/
     }
 }
 

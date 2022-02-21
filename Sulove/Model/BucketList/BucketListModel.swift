@@ -6,4 +6,15 @@
 //
 
 import Foundation
+import SwiftUI
+
+class bucketListClass : ObservableObject{
+    @Published var name : String
+    @Published var date : String
+    
+    init(name : String , date : String){
+        self.name = name
+        self.date = date
+    }
+}
 

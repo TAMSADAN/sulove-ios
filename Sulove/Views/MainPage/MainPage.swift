@@ -25,45 +25,32 @@ struct MainPage: View {
     
     var body: some View {
         let showItem : Bool = showItemCount.count > 0 ? true : false
-        
-        GeometryReader { geometry in
-            ScrollView{
-                HStack{
-                    Text("서랍")
-                        .font(Font.custom("GmarketSansMedium", size: 30))
-                    Spacer()
-                    Button{
-                        showMenuModal = true
-                    } label: {
-                        Label("hamburgerMenu", systemImage: "menucard"
-                              )
-                            .font(.system(size: 26))
-                            .labelStyle(.iconOnly)
-                            .foregroundColor(.black)
-                        
+        NavigationView{
+            GeometryReader {
+                geometry in
+                ScrollView{
+                    if showItem {
+                        BucketListRow()
+                    }else {
+                        VStack{
+                            Text("메뉴버튼을 눌러")
+                            Text("기능을 추가해주세요.")
+                            
+                        }
+                        .font(Font.custom("GmarketSansLight", size: 22))
+                        .frame(
+                            width : geometry.size.width,
+                            height: geometry.size.height-80
+                        )
                     }
+                    
                 }
-                .padding()
-                
-                
-                if item.isExisted {
-                    BucketListRow()
-                }else {
-                    VStack{
-                        Text("메뉴버튼을 눌러")
-                        Text("기능을 추가해주세요.")
-                        
-                    }
-                    .font(Font.custom("GmarketSansLight", size: 22))
-                    .frame(
-                        width : geometry.size.width,
-                        height: geometry.size.height-80
-                    )
+                .sheet(isPresented:$showMenuModal){
+                    SelectMenuModal(isPresented: $showMenuModal)
                 }
+                
             }
-            .sheet(isPresented:$showMenuModal){
-                SelectMenuModal(isPresented: $showMenuModal)
-            }
+            .navigationTitle("서랍")
         }
     }
 }
@@ -74,3 +61,21 @@ struct MainPage_Previews: PreviewProvider {
             SuloveItem(itemName: "버킷리스트", isExisted: false))
     }
 }
+
+/*HStack{
+    Text("서랍")
+        .font(Font.custom("GmarketSansMedium", size: 30))
+    Spacer()
+    Button{
+        showMenuModal = true
+    } label: {
+        Label("hamburgerMenu", systemImage: "menucard"
+              )
+            .font(.system(size: 26))
+            .labelStyle(.iconOnly)
+            .foregroundColor(.black)
+        
+    }
+}
+.padding()
+*/
