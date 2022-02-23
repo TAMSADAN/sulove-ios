@@ -38,7 +38,7 @@ struct BucketListRow: View {
                 ScrollView(.horizontal){
                     HStack{
                         ForEach(bucketItems.indices){ idx in
-                            NavigationLink(destination: BucketListDetail()) {
+                            NavigationLink(destination: BucketListDetail(content: "소진")) {
                             BucketListItem(name : bucketItems[idx].name, date : bucketItems[idx].date,
                                            importance: bucketItems[idx].importance
                             )
