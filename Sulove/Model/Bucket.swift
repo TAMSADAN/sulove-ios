@@ -8,13 +8,13 @@
 import Foundation
 import SwiftUI
 
-struct Bucket: Hashable, Identifiable, Decodable{
+struct Bucket: Hashable, Identifiable, Codable{
     var id : Int
-    var uesrId : Int
-    var score : Int //별 갯수
-    var status: Bool //미완 완성 상태
-    var title: String //제목
-    var context: String //부제목 
+    var userId : Int
+    var score : Int
+    var status: Bool
+    var title: String
+    var context: String
     var targetDate: String
     var postedDate: String
 }

@@ -8,9 +8,9 @@
 import Foundation
 import Combine
 
-final class ModelData: ObservableObject{
-    @Published var buckets : [Bucket] = load("BucketData.json")
+final class ModelData: ObservableObject {
     @Published var memos : [Memo] = load("MemoData.json")
+    @Published var buckets : [Bucket] = load("BucketData.json")
 }
 
 func load<T:Decodable>(_ filename: String) -> T{

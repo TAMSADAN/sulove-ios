@@ -9,12 +9,10 @@ import SwiftUI
 
 @main
 struct SuloveApp: App {
-    @StateObject private var item = SuloveItem(itemName: "디데이", isExisted: false)
-    
+    @StateObject private var modelData = ModelData()
     var body: some Scene {
         WindowGroup {
-            MainPage()
-                .environmentObject(item)
+            MainPage().environmentObject(modelData)
         }
     }
 }

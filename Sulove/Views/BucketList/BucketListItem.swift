@@ -8,21 +8,19 @@
 import SwiftUI
 
 struct BucketListItem: View {
-    var name : String
-    var date : String
-    var importance : Int
+    var bucket : Bucket
     
     var body: some View {
         
         VStack(alignment: .leading){
-            Text(date)
+            Text(bucket.targetDate)
                 .font(Font.custom("GmarketSansMedium", size: 40))
                 .foregroundColor(Color.black)
-            Text(name)
+            Text(bucket.title)
                 .font(Font.custom("GmarketSansLight", size: 20))
                 .foregroundColor(Color.black)
             HStack{
-                ForEach(0..<importance){_ in
+                ForEach(0..<bucket.score){_ in
                     Text("★")
                         .font(Font.custom("GmarketSansLight", size: 26))
                         .foregroundColor(Color.yellow)
@@ -40,7 +38,12 @@ struct BucketListItem: View {
 }
 
 struct BucketListItem_Previews: PreviewProvider {
+    static var bucket = ModelData().buckets
     static var previews: some View {
-        BucketListItem(name: "이소진 사랑해", date: "5/13", importance: 5)
+        Group{
+            BucketListItem(bucket : bucket[0])
+            BucketListItem(bucket : bucket[1])
+        }
+        .previewLayout(.fixed(width: 250, height: 170))
     }
 }

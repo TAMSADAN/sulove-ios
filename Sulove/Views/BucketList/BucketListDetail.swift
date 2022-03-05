@@ -35,7 +35,7 @@ let dateformat: DateFormatter = {
 }()
 
 struct BucketListDetail: View {
-    
+    var bucket : Bucket
     var bucketColor : Color = Color(hue: 1.0, saturation: 0.626, brightness: 0.929)
     
     @ObservedObject var starState: StarState = StarState()
@@ -50,7 +50,7 @@ struct BucketListDetail: View {
             bucketColor.frame(height:2)
             
             VStack(alignment: .center){
-                RatingStars(starState: StarState())
+                RatingStars(starState : starState)
             }
             .frame(maxWidth: .infinity)
             
@@ -86,7 +86,8 @@ struct BucketListDetail: View {
 }
 
 struct BucketListDetail_Previews: PreviewProvider {
+    static var bucket = ModelData().buckets
     static var previews: some View {
-        BucketListDetail(starState: StarState(), content: "")
+        BucketListDetail(bucket : bucket[0], content : bucket[0].context)
     }
 }

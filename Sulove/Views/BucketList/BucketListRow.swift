@@ -8,18 +8,14 @@
 import SwiftUI
 
 struct BucketListRow: View {
-    
-    var bucketItems : [bucketListClass]=[
-        bucketListClass(name: "과탑하기", date: "5/13", importance: 3),
-        bucketListClass(name: "영모생일", date: "9/23", importance : 5)
-    ]
-    
-    var bucketColor : Color = Color(hue: 1.0, saturation: 0.626, brightness: 0.929)
-    
-    var body: some View {
+    @EnvironmentObject var modelData : ModelData
+        
+        var bucketColor : Color = Color(hue: 1.0, saturation: 0.626, brightness: 0.929)
+        
+        var body: some View {
             VStack(alignment: .leading){
                 HStack{
-                    //Image(systemName: "wand.and.stars")
+                        //Image(systemName: "wand.and.stars")
                         //.font(.system(size: 25))
                     
                     Text("버킷리스트")
@@ -37,11 +33,9 @@ struct BucketListRow: View {
                 
                 ScrollView(.horizontal){
                     HStack{
-                        ForEach(bucketItems.indices){ idx in
-                            NavigationLink(destination: BucketListDetail(content: "소진")) {
-                            BucketListItem(name : bucketItems[idx].name, date : bucketItems[idx].date,
-                                           importance: bucketItems[idx].importance
-                            )
+                        ForEach(modelData.buckets){ bucket in
+                            NavigationLink(destination: BucketListDetail(bucket : bucket, content : "소진")) {
+                                BucketListItem(bucket : bucket)
                             }
                         }
                     }
@@ -89,7 +83,7 @@ struct BucketListRow: View {
 
 struct BucketListRow_Previews: PreviewProvider {
     static var previews: some View {
-        BucketListRow()
+        BucketListRow().environmentObject(ModelData())
     }
 }
 

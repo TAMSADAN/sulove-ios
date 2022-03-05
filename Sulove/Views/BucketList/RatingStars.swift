@@ -9,7 +9,6 @@ import SwiftUI
 
 struct RatingStars: View {
     @ObservedObject var starState: StarState = StarState()
-    
     var body: some View {
         HStack {
             ForEach(0..<5, id: \.self) { index in
