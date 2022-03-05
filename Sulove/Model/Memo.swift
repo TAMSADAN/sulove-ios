@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct Memo: Hashable, Identifiable, Decodable{
+struct Memo: Hashable, Identifiable, Codable{
     var id: Int
     var userId: Int
     var title: String
