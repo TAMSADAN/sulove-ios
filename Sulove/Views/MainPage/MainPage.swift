@@ -11,9 +11,12 @@ struct MainPage: View {
     @EnvironmentObject var modelData : ModelData
     
     var body: some View {
-        VStack{
-            BucketListRow()
-            MemoRow()
+        ScrollView{
+            VStack{
+                BucketListRow()
+                MemoRow()
+                DdayRow()
+            }
         }
     }
 }
@@ -23,21 +26,3 @@ struct MainPage_Previews: PreviewProvider {
         MainPage().environmentObject(ModelData())
     }
 }
-
-/*HStack{
-    Text("서랍")
-        .font(Font.custom("GmarketSansMedium", size: 30))
-    Spacer()
-    Button{
-        showMenuModal = true
-    } label: {
-        Label("hamburgerMenu", systemImage: "menucard"
-              )
-            .font(.system(size: 26))
-            .labelStyle(.iconOnly)
-            .foregroundColor(.black)
-        
-    }
-}
-.padding()
-*/

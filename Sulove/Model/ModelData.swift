@@ -11,6 +11,7 @@ import Combine
 final class ModelData: ObservableObject {
     @Published var memos : [Memo] = load("MemoData.json")
     @Published var buckets : [Bucket] = load("BucketData.json")
+    @Published var ddays : [Dday] = load("DdayData.json")
 }
 
 func load<T:Decodable>(_ filename: String) -> T{
