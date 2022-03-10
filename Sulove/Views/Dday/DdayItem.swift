@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct DdayItem: View {
-    var dday : Dday
+    let calendar = Calendar.current
+    let currentDate = Date()
+    let dateFormatter = DateFormatter()
+    var daysCount:Int = 0
     
+    /*func days(from date: Date) -> Int {
+        return calendar.dateComponents([.day], from: date, to: currentDate).day + 1
+    }*/
+
+    
+    var dday : Dday
     var body: some View {
         VStack(alignment: .leading){
             Text(dday.targetDate)
@@ -34,6 +43,6 @@ struct DdayItem_Previews: PreviewProvider {
             DdayItem(dday : dday[0])
             DdayItem(dday : dday[1])
         }
-        .previewLayout(.fixed(width: 250, height: 170))
+        .previewLayout(.fixed(width: 500, height: 200))
     }
 }

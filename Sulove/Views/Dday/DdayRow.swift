@@ -17,7 +17,6 @@ struct DdayRow: View {
             HStack{
                 HStack{
                     Text("디데이")
-                        .font(Font.custom("GmarketSansMedium", size: 25))
                 }
                 .font(Font.custom("GmarketSansMedium", size: 24))
                 .foregroundColor(ddayColor)

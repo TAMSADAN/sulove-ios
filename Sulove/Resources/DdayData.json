@@ -4,9 +4,9 @@
         "userId" : 1,
         "type" : "#기념일",
         "title": "사귄날",
-        "context": "소진이랑 사귄날",
-        "targetDate": "2021/12/14",
-        "postedDate": "2022/3/6"
+        "context": "소진이랑 100일",
+        "targetDate": "2021-12-24 00:00",
+        "postedDate": "2022-03-06 00:00"
     },
     {
         "id" : 1,
@@ -14,7 +14,7 @@
         "type" : "#기념일",
         "title": "사귄날",
         "context": "소진이랑 사귄날",
-        "targetDate": "2021/12/14",
-        "postedDate": "2022/3/6"
+        "targetDate": "2021-12-24 00:00",
+        "postedDate": "2022-03-06 00:00"
     }
 ]
